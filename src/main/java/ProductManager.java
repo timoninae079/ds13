@@ -1,4 +1,5 @@
 import org.jetbrains.annotations.NotNull;
+
 public class ProductManager {
 
     private final ProductRepository repository;

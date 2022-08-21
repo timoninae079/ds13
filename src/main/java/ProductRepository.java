@@ -9,6 +9,7 @@ public class ProductRepository {
         tmp[tmp.length - 1] = product;
         products = tmp;
     }
+
     public void remove(int id) {
         Product[] tmp = new Product[products.length - 1];
         int copyToIndex = 0;
@@ -21,6 +22,7 @@ public class ProductRepository {
         }
         products = tmp;
     }
+
     public Product[] findAll() {
         return products;
     }

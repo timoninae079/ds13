@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
 public class ProductManagerTest {
@@ -64,10 +65,10 @@ public class ProductManagerTest {
         manager.add(book4);
 
         Product[] actual = manager.searchBy("Harry");
-        Product[] expected = {book1,book4};
+        Product[] expected = {book1, book4};
 
         assertArrayEquals(expected, actual);
-}
+    }
 
     @Test
     public void shouldRemoveById() {
